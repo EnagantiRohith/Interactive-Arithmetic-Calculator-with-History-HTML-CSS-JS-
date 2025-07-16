@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Parcel Sandbox</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="inside-cont">
+      <h1 id="head1">Interactive Arithmetic Operations</h1>
+
+      <div class="input-label">
+        <label>Number A: </label><br>
+        <input type="number" id="numA" name="numA" placeholder="Enter your First Number">
+        <span id="error-numA"></span>
+      </div>
+
+      <div class="input-label">
+        <label>Number B: </label><br>
+        <input type="number" id="numB" name="numB" placeholder="Enter your Second Number">
+        <span id="error-numB"></span>
+      </div>
+
+      <div class="input-label">
+            <label>Operation : </label><br>
+            <select id="oper" name="oper">
+            <option value="">-- Select --</option>
+            <option value="add">Addition</option>
+            <option value="subtract">Subtraction</option>
+            <option value="multiply">Multiplication</option>
+            <option value="divide">Division</option>
+            </select>
+            <br>
+            <span id="error-oper"></span>
+     </div>
+      
+
+      <div class="btn">
+        <span><button type="submit" id="calc-btn">Calculate</button></span>
+        <span><button type="button" id="clear-btn">Clear</button></span>
+        <span><button type="button" id="clearHis-btn">Clear History</button></span>
+      </div>
+
+      <p>Result : <span id="result"></span></p>
+
+      <h2 id="head2">Calculation History</h2>
+      <p id="history1"><span></span></p>
+      <p id="history2"><span></span></p>
+      <p id="history3"><span></span></p>
+      <p id="history4"><span></span></p>
+      <p id="history5"><span></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
